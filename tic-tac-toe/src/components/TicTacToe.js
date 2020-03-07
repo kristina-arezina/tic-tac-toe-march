@@ -46,7 +46,7 @@ export default class TicTacToe extends Component {
             const desc = move ? 'Go to #' + move : 'New Game';
             return (
                 <li key={move}>
-                    <button onClick={() => { this.jumpTo(move) }}>
+                    <button className="btnHistory" onClick={() => { this.jumpTo(move) }}>
                         {desc}
                     </button>
                 </li>
@@ -62,11 +62,11 @@ export default class TicTacToe extends Component {
 
         return (
             <div className="ticTacToe">
-                <div className="game-board">
+                <div className="ticTacToe-board">
                     <Grid onClick={(i) => this.handleClick(i)}
                         boxs={current.boxs} />
                 </div>
-                <div className="game-info">
+                <div className="ticTacToe-info">
                     <div>{status}</div>
                     <ul>{moves}</ul>
                 </div>

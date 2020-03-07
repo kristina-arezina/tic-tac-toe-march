@@ -1,6 +1,7 @@
-.app{
-  background-color:#E8EAF6;
+body{
+    background-color:#E8EAF6;
 }
+
 .box {
   background: white;
   border: 1px solid grey;
@@ -53,4 +54,11 @@ li {
 
 .status {
   margin-bottm: 10px;
+}
+
+.btnHistory{
+  padding:10px;
+  margin:2px;
+  width:100px;
+  height: 50px;
 }
