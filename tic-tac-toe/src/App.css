@@ -40,7 +40,11 @@
 
 /* ticTacToe Info */
 ul {
-  padding-left: 30px;
+  padding-left: 40px;
+}
+
+li {
+  list-style-type: none;
 }
 
 .ticTacToe-info {
