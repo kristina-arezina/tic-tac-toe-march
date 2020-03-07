@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Grid from './Grid';
 
-export default class Game extends Component {
+export default class TicTacToe extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -61,7 +61,7 @@ export default class Game extends Component {
 
 
         return (
-            <div className="game">
+            <div className="ticTacToe">
                 <div className="game-board">
                     <Grid onClick={(i) => this.handleClick(i)}
                         boxs={current.boxs} />
