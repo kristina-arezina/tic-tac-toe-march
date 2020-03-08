@@ -55,12 +55,12 @@ export default class TicTacToe extends Component {
         let status;
         if (winner) {
             status = 'Winner is ' + winner;
-            this.state = {
+            this.setState({
                 stepNumber: 0,
                 history: [
                     { boxs: Array(9).fill(null) }
                 ]
-            }
+            })
         } else {
             status = 'Next Player is ' + (this.state.xIsNext ? 'X' : 'O');
         }
